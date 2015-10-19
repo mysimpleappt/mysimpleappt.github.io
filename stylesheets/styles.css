@@ -36,7 +36,7 @@ section, div, p {
         display: inline-block;
         min-width: 40px;
         font-family: 'Varela Round', sans-serif;
-        font-size: 72px;
+        font-size: 65px;
         font-weight: bold;
     }
 
@@ -46,22 +46,21 @@ section, div, p {
 }
 
     .introduction__image {
-        width: 150px;
+        max-width: 140px;
         display: inline;
-        vertical-align: text-bottom;
+        vertical-align: middle;
     }
 
     .introduction__text {
         margin-top: 10px;
         display: inline-block;
-        max-width: 235px;
+        max-width: 175px;
         text-align: center;
+        vertical-align: middle;
     }
 
-        .introduction__text-section {}
-
-        .introduction__text-section:first-child {
-            margin-bottom: 15px;
+        .introduction__text-section {
+            text-align: center;
         }
 
 .acronym-explanation {
@@ -132,8 +131,18 @@ section, div, p {
         max-width: 660px;
     }
 
+        .introduction__image {
+            max-width: 150px;
+        }
+
         .introduction__text {
             min-width: 500px;
+            max-width: none;
         }
+
+    .acronym-explanation {
+        max-width: 660px;
+        margin: 15px auto;
+    }
 }
 
