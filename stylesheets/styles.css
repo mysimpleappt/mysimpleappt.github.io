@@ -1,8 +1,10 @@
 .top-heading {
     margin: 20px auto;
+    padding-bottom: 30px;
     max-width: 350px;
     font-size: 36px;
     text-align: center;
+    border-bottom: 3px solid #000;
 }
 
     .top-heading__word {
@@ -27,3 +29,26 @@
         font-size: 72px;
         font-weight: bold;
     }
+
+.introduction {
+    font-family: 'Roboto', sans-serif;
+}
+
+    .introduction__image {
+        width: 150px;
+        display: inline;
+        vertical-align: text-bottom;
+    }
+
+    .introduction__text {
+        margin-top: 10px;
+        display: inline-block;
+        max-width: 235px;
+        text-align: center;
+    }
+
+        .introduction__text-section {}
+
+        .introduction__text-section:first-child {
+            margin-bottom: 15px;
+        }
