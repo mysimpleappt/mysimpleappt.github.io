@@ -1,10 +1,13 @@
 var calculateData = function(age, gender) {
+
+    // Sets up initiale variables, some of which will change depending on the user's age and gender input
     var symptoms = '<div class="acronym__description-suggestion">Tell your doctor if you experience any of the following symptoms: fever, chest pain, shortness of breath or difficulty breathing, nausea, vomiting, dizziness, weight gain/loss, changes in bowel or habits, muscle or joint pains, or unexplained bleeding or bruising.</div>',
         immunizations,
         medications = '<div class="acronym__description-suggestion"><p>Tell your doctor about any and all medications you are taking. This includes prescription medications, over-the-counter medications (e.g., Tylenol, ibuprofen, aspirin, etc.), herbal remedies, complementary medicines, and vitamin supplements.</p><p>Remember to ask for refills of any medications, as needed.<p></div>',
         procedures, lifestyle,
         exercise = '<div class="acronym__description-suggestion"><p class="bold">For Overall Cardiovascular Health:</p><p>At least 30 minutes of moderate-intensity aerobic activity (e.g., brisk walking) on 5 or more days every week<p>OR</p><p>At least 25 minutes of vigorous aerobic activity (e.g., running) on 3 or more days every week</p><p>AND</p><p>Moderate&hyphen; to high&hyphen;intensity muscle&hyphen;strengthening activity on at least 2 days every week for additional health benefits.</p><p class="bold">For Lowering Blood Pressure and Cholesterol</p><p>At least 40 minutes of moderate- to vigorous-intensity aerobic activity 3 or 4 times per week</p></div>';
 
+    // Sets up conditional statement for different age groups and gender and sets variables to information that is appropriate per group
     if (age >= 19 && age <= 21 && gender === 'female') {
         immunizations = '<div class="acronym__description-suggestion"><p><span class="bold">Flu vaccine</span> every year</p><p><span class="bold">Tetanus-diphtheria (Td)</span> or <span class="bold">Tetanus-diphtheria-acellular pertussis (TdaP)</span> booster every 10 years. If you are pregnant, you should get a Tdap vaccine during the 3rd trimester of every pregnancy to help protect your babies from pertussis (whooping cough). </p><p><span class="bold">HPV vaccine</span>, 3 doses</p><p><span class="bold">Varicella vaccine</span>, 2 doses (unless previously vaccinated or you have a history of varicella/chicken-pox or herpes zoster/shingles)</p><p><span class="bold">Meningococcal vaccine</span>: First-year college students up through age 21 who are living in residence halls should be vaccinated if you have not already been vaccinated on or after your 16th birthday</p></div>';
         procedures = '<div class="acronym__description-suggestion"><p><span class="bold">Blood pressure:</span> check at every acute/non-acute medical encounter and at least once every 3-5 years</p><p><span class="bold">For sexually active women:</span> first Pap test for cervical cancer screening starting at age 21, chlamydia and gonorrhea testing every year through age 24.</p><p><span class="bold">HIV:</span> test at least one time during adulthood (through age 64).</p></div>';
@@ -77,16 +80,22 @@ var calculateData = function(age, gender) {
 
     }
 
+    // Changes the inner html of the initial page
     $('.replacement-class').html("<table class='acronym-explanation__table'><tbody><tr class='acronym-explanation__acronym'><td class='acronym-explanation__acronym-letter'>S</td><td class='acronym-explanation__acronym-description'><div class='acronym__description-heading'>Symptoms</div><div class='acronym__description-subtext'>What is the reason for your appointment today?</div>" + symptoms + "</td></tr><tr class='acronym-explanation__acronym'><td class='acronym-explanation__acronym-letter'>I</td><td class='acronym-explanation__acronym-description'><div class='acronym__description-heading'>Immunizations</div>" + immunizations +"</td></tr><tr class='acronym-explanation__acronym'><td class='acronym-explanation__acronym-letter'>M</td><td class='acronym-explanation__acronym-description'><div class='acronym__description-heading'>Medications &sol; Refills</div>" + medications + "</td></tr><tr class='acronym-explanation__acronym'><td class='acronym-explanation__acronym-letter'>P</td><td class='acronym-explanation__acronym-description'><div class='acronym__description-heading'>Procedures &sol; Screening Tests</div>" + procedures + "</td></tr><tr class='acronym-explanation__acronym'><td class='acronym-explanation__acronym-letter'>L</td><td class='acronym-explanation__acronym-description'><div class='acronym__description-heading'>Lifestyle Modifications</div>" + lifestyle +"</td></tr><tr class='acronym-explanation__acronym'><td class='acronym-explanation__acronym-letter'>E</td><td class='acronym-explanation__acronym-description'><div class='acronym__description-heading'>Exercise</div>" + exercise +"</td></tr></tbody></table>");
+    // Adds a new class to which to scope new styles
     $('.replacement-class').addClass('appointment');
 };
 
 $(document).ready(function() {
+    // Sets up that when the submit button is clicked to run the following function
     $('[data-form-submit]').on('click', function() {
+        // Grabs the form data input values which will be placed into the calculateData function to determine what group the user belongs to
         var $age = $('[data-age-input]').val(),
             $gender = $('[data-gender-input]:checked').val();
+        // Sends the variables to the function to do the calculations
         calculateData($age, $gender);
 
+        // Prevents the page from refreshing after the form is submitted so only the inner HTML gets updated
         return false;
     });
 });
