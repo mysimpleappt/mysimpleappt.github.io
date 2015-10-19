@@ -1,3 +1,29 @@
-h1 {
-    color: blue;
+.top-heading {
+    margin: 20px auto;
+    max-width: 350px;
+    font-size: 36px;
+    text-align: center;
 }
+
+    .top-heading__word {
+        font-family: 'Gloria Hallelujah', cursive;
+        font-style: italic;
+        text-transform: lowercase;
+    }
+
+    .top-heading__word--top {
+        text-align: left;
+        margin-bottom: 10px;
+    }
+
+    .top-heading__word--bottom {
+        text-align: right;
+    }
+
+    .top-heading__acronym {
+        display: inline-block;
+        min-width: 40px;
+        font-family: 'Varela Round', sans-serif;
+        font-size: 72px;
+        font-weight: bold;
+    }
