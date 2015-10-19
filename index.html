@@ -1,93 +1,108 @@
 <!doctype HTML>
 
+<html>
+
   <head>
 
-  <!-- Adds Media Queries -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>My SIMPLE APPT</title>
 
-  <!-- This is where our CSS and JS will be -->
-  <link href='https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Varela+Round|Roboto:400,700' rel='stylesheet' type='text/css' />
+    <!-- Adds Media Queries -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-  <!-- Personal Stylesheets -->
-  <link type='text/css' rel='stylesheet' href='stylesheets/reset.css' />
-  <link type='text/css' rel='stylesheet' href='stylesheets/styles.css' />
+    <!-- jQuery Library -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+
+    <!-- This is where our CSS and JS will be -->
+    <link href='https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Varela+Round|Roboto:400,700' rel='stylesheet' type='text/css' />
+
+    <!-- Personal Stylesheets -->
+    <link type='text/css' rel='stylesheet' href='stylesheets/reset.css' />
+    <link type='text/css' rel='stylesheet' href='stylesheets/styles.css' />
 
   </head>
 
   <body>
 
-  <h1 class="top-heading">
-    <p class='top-heading__word top-heading__word--top'>My</p>
-    <span class='top-heading__acronym'>S</span>
-    <span class='top-heading__acronym'>I</span>
-    <span class='top-heading__acronym'>M</span>
-    <span class='top-heading__acronym'>P</span>
-    <span class='top-heading__acronym'>L</span>
-    <span class='top-heading__acronym'>E</span>
-    <p class='top-heading__word top-heading__word--bottom'>Appointment</p>
-  </h1>
+    <h1 class="top-heading">
+      <p class='top-heading__word top-heading__word--top'>My</p>
+      <span class='top-heading__acronym'>S</span>
+      <span class='top-heading__acronym'>I</span>
+      <span class='top-heading__acronym'>M</span>
+      <span class='top-heading__acronym'>P</span>
+      <span class='top-heading__acronym'>L</span>
+      <span class='top-heading__acronym'>E</span>
+      <p class='top-heading__word top-heading__word--bottom'>Appointment</p>
+    </h1>
 
-  <section class='introduction'>
-    <p class='introduction__text-section'>Your next doctor&rsquo;s appointment for an annual physical or well&hyphen;visit is coming up soon!</p>
-    <img src='http://userscontent2.emaze.com/images/5774bd07-b124-4162-8fc0-b055c0f8a5c4/7ffdb4cd-230d-4c81-ae20-a9df9fa05003.jpg' alt='Stressed Out' class='introduction__image'/>
-    <div class='introduction__text'>
-      <p class='introduction__text-section'>Are you&hellip;</p>
-      <p class='introduction__text-section'>Stressed about your appointment?</p>
-      <p class='introduction__text-section'>Not sure what to ask the doctor?</p>
-      <p class='introduction__text-section'>Behind on your shots or vaccinations?</p>
-    </div>
-  </section>
-  <section class='acronym'>
-    <div class='acronym-explanation'>
-      <p class='acronym-explanation__heading'>Keep your appointments <span class='bold'>SIMPLE</span> with this quick and easy mnemonic to help remember what you should discuss with your doctor at your next appointment:</p>
-      <table class='acronym-explanation__table'>
-        <tbody>
-          <tr class='acronym-explanation__acronym'>
-            <td class='acronym-explanation__acronym-letter'>S</td>
-            <td class='acronym-explanation__acronym-description'>ymptoms</td>
-          </tr>
-          <tr class='acronym-explanation__acronym'>
-            <td class='acronym-explanation__acronym-letter'>I</td>
-            <td class='acronym-explanation__acronym-description'>mmunizations</td>
-          </tr>
-          <tr class='acronym-explanation__acronym'>
-            <td class='acronym-explanation__acronym-letter'>M</td>
-            <td class='acronym-explanation__acronym-description'>edications &sol; Refills</td>
-          </tr>
-          <tr class='acronym-explanation__acronym'>
-            <td class='acronym-explanation__acronym-letter'>P</td>
-            <td class='acronym-explanation__acronym-description'>rocedures &sol; Screening tests</td>
-          </tr>
-          <tr class='acronym-explanation__acronym'>
-            <td class='acronym-explanation__acronym-letter'>L</td>
-            <td class='acronym-explanation__acronym-description'>ifestyle Modifications</td>
-          </tr>
-          <tr class='acronym-explanation__acronym'>
-            <td class='acronym-explanation__acronym-letter'>E</td>
-            <td class='acronym-explanation__acronym-description'>xercise</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </section>
+    <section class='replacement-class'>
 
-  <section class='simple-input'>
-    <p class='simple-input__heading bold'>See how SIMPLE your appointments can be! </p>
-    <p class='simple-input__subtext'>Enter your age and sex below to get personalized recommendations and prepare for your next doctor&rsquo;s appointment:</p>
-    <form class='simple-input__form'>
-      <label for='age-input' class='simple-input__subtext simple-input__label bold'>What is your age?</label>
-      <input type='number' class='simple-input__age' id='age-input' placeholder='Age' data-age-input/>
-      <p class='simple-input__subtext simple-input__label bold'>What is your sex?</p>
-      <div class='simple-input__radio'>
-        <input type='radio' class='simple-input__gender' id='gender-input-male' name='gender-input' value='male' data-gender-input/><label for='gender-input-male' class='simple-input__subtext simple-input__label simple-input__label--gender bold'>Male</label>
-      </div>
-      <div class='simple-input__radio'>
-        <input type='radio' class='simple-input__gender' id='gender-input-female' name='gender-input' value='female' data-gender-input/><label for='gender-input-female' class='simple-input__subtext simple-input__label simple-input__label--gender bold'>Female</label>
-      </div>
-      <button class='simple-input__submit'>Submit </button>
-    </form>
-    <p class='simple-input__disclosure'>The information on this site is not intended or implied to be a substitute for professional medical advice, diagnosis, or treatment. All content, including text, graphics, images, and information contained on this website is for general information purposes only. You are encouraged to confirm any information obtained from this website with your physician. NEVER DISREGARD PROFESSIONAL MEDICAL ADVICE OR DELAY SEEKING MEDICAL TREATMENT BECAUSE OF SOMETHING YOU READ ON THIS WEBSITE.</p>
-    <p class='simple-input__disclosure'>my SIMPLE appointment does not store, disclose, give, sell, or transfer any personal information about visitors to this website.</p>
-  </section>
+      <section class='introduction'>
+        <p class='introduction__text-section'>Your next doctor&rsquo;s appointment for an annual physical or well&hyphen;visit is coming up soon!</p>
+        <img src='http://userscontent2.emaze.com/images/5774bd07-b124-4162-8fc0-b055c0f8a5c4/7ffdb4cd-230d-4c81-ae20-a9df9fa05003.jpg' alt='Stressed Out' class='introduction__image'/>
+        <div class='introduction__text'>
+          <p class='introduction__text-section'>Are you&hellip;</p>
+          <p class='introduction__text-section'>Stressed about your appointment?</p>
+          <p class='introduction__text-section'>Not sure what to ask the doctor?</p>
+          <p class='introduction__text-section'>Behind on your shots or vaccinations?</p>
+        </div>
+      </section>
+      <section class='acronym'>
+        <div class='acronym-explanation'>
+          <p class='acronym-explanation__heading'>Keep your appointments <span class='bold'>SIMPLE</span> with this quick and easy mnemonic to help remember what you should discuss with your doctor at your next appointment:</p>
+          <table class='acronym-explanation__table'>
+            <tbody>
+              <tr class='acronym-explanation__acronym'>
+                <td class='acronym-explanation__acronym-letter'>S</td>
+                <td class='acronym-explanation__acronym-description'>ymptoms</td>
+              </tr>
+              <tr class='acronym-explanation__acronym'>
+                <td class='acronym-explanation__acronym-letter'>I</td>
+                <td class='acronym-explanation__acronym-description'>mmunizations</td>
+              </tr>
+              <tr class='acronym-explanation__acronym'>
+                <td class='acronym-explanation__acronym-letter'>M</td>
+                <td class='acronym-explanation__acronym-description'>edications &sol; Refills</td>
+              </tr>
+              <tr class='acronym-explanation__acronym'>
+                <td class='acronym-explanation__acronym-letter'>P</td>
+                <td class='acronym-explanation__acronym-description'>rocedures &sol; Screening Tests</td>
+              </tr>
+              <tr class='acronym-explanation__acronym'>
+                <td class='acronym-explanation__acronym-letter'>L</td>
+                <td class='acronym-explanation__acronym-description'>ifestyle Modifications</td>
+              </tr>
+              <tr class='acronym-explanation__acronym'>
+                <td class='acronym-explanation__acronym-letter'>E</td>
+                <td class='acronym-explanation__acronym-description'>xercise</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class='simple-input'>
+        <p class='simple-input__heading bold'>See how SIMPLE your appointments can be! </p>
+        <p class='simple-input__subtext'>Enter your age and sex below to get personalized recommendations and prepare for your next doctor&rsquo;s appointment:</p>
+        <form class='simple-input__form' data-form>
+          <label for='age-input' class='simple-input__subtext simple-input__label bold'>What is your age?</label>
+          <input type='number' class='simple-input__age' id='age-input' placeholder='Age' required='' data-age-input/>
+          <p class='simple-input__subtext simple-input__label bold'>What is your sex?</p>
+          <div class='simple-input__radio'>
+            <input type='radio' class='simple-input__gender' id='gender-input-male' name='gender-input' value='male' data-gender-input/><label for='gender-input-male' class='simple-input__subtext simple-input__label simple-input__label--gender bold'>Male</label>
+          </div>
+          <div class='simple-input__radio'>
+            <input type='radio' class='simple-input__gender' id='gender-input-female' name='gender-input' value='female' data-gender-input/><label for='gender-input-female' class='simple-input__subtext simple-input__label simple-input__label--gender bold'>Female</label>
+          </div>
+          <button class='simple-input__submit' data-form-submit type='submit'>Submit </button>
+        </form>
+        <p class='simple-input__disclosure'>The information on this site is not intended or implied to be a substitute for professional medical advice, diagnosis, or treatment. All content, including text, graphics, images, and information contained on this website is for general information purposes only. You are encouraged to confirm any information obtained from this website with your physician. NEVER DISREGARD PROFESSIONAL MEDICAL ADVICE OR DELAY SEEKING MEDICAL TREATMENT BECAUSE OF SOMETHING YOU READ ON THIS WEBSITE.</p>
+        <p class='simple-input__disclosure'>my SIMPLE appointment does not store, disclose, give, sell, or transfer any personal information about visitors to this website.</p>
+      </section>
+
+    </section>
+
+    <script type="text/javascript" src="calculate_data.js"></script>
 
   </body>
+
+</html>

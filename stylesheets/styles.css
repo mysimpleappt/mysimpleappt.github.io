@@ -8,6 +8,8 @@ section, div, p {
     font-weight: 700;
 }
 
+/* Specific Styles */
+
 .top-heading {
     margin: 20px auto;
     padding-bottom: 30px;
@@ -46,7 +48,7 @@ section, div, p {
 }
 
     .introduction__image {
-        max-width: 140px;
+        width: 140px;
         display: inline;
         vertical-align: middle;
     }
@@ -65,6 +67,7 @@ section, div, p {
 
 .acronym-explanation {
     margin-top: 15px;
+    max-width: 700px;
 }
 
     .acronym-explanation__heading {
@@ -72,9 +75,8 @@ section, div, p {
     }
 
     .acronym-explanation__table {
-        margin: auto;
+        margin: 10px auto 0;
         width: 250px;
-        margin-top: 10px;
     }
 
         .acronym-explanation__acronym {}
@@ -142,13 +144,48 @@ section, div, p {
         margin: 10px 20px;
     }
 
+/* Scopes styles for information page */
+
+.appointment p {
+    margin-bottom: 10px;
+}
+
+.appointment .acronym-explanation__table {
+    width: auto;
+    max-width: 700px;
+}
+
+    .appointment .acronym-explanation__acronym-letter {
+        font-size: 84px;
+        vertical-align: top;
+    }
+
+    .appointment .acronym-explanation__acronym-description {
+        vertical-align: top;
+        width: 75%;
+        margin-bottom: 25px;
+    }
+
+    .appointment .acronym__description-heading {
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    .appointment .acronym__description-subtext {
+        margin-bottom: 20px;
+    }
+
+    .appointment .acronym__description-suggestion {}
+
+/* Media Query for Desktop Screens */
+
 @media screen and (min-width: 760px) {
     .introduction {
         max-width: 700px;
     }
 
         .introduction__image {
-            max-width: 150px;
+            width: 150px;
         }
 
         .introduction__text {
@@ -157,7 +194,6 @@ section, div, p {
         }
 
     .acronym-explanation {
-        max-width: 700px;
         margin: 15px auto;
     }
 
