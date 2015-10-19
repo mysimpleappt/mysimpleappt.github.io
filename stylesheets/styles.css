@@ -33,7 +33,7 @@ section, div, p {
     }
 
     .top-heading__acronym {
-        display: inline-block;
+        display: inline;
         min-width: 40px;
         font-family: 'Varela Round', sans-serif;
         font-size: 65px;
