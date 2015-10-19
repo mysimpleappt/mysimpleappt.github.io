@@ -1,3 +1,13 @@
+/* Global Styles */
+
+section, div, p {
+    font-family: 'Roboto', sans-serif;
+}
+
+.bold {
+    font-weight: 700;
+}
+
 .top-heading {
     margin: 20px auto;
     padding-bottom: 30px;
@@ -31,7 +41,6 @@
     }
 
 .introduction {
-    font-family: 'Roboto', sans-serif;
     margin: auto;
     max-width: 390px;
 }
@@ -40,12 +49,6 @@
         width: 150px;
         display: inline;
         vertical-align: text-bottom;
-    }
-
-    .introduction__image--2 {
-        display: block;
-        margin: 22px auto 0;
-        vertical-align: none;
     }
 
     .introduction__text {
@@ -60,6 +63,69 @@
         .introduction__text-section:first-child {
             margin-bottom: 15px;
         }
+
+.acronym-explanation {
+    margin-top: 15px;
+}
+
+    .acronym-explanation__heading {
+        text-align: center;
+    }
+
+    .acronym-explanation__table {
+        margin: auto;
+        width: 250px;
+        margin-top: 10px;
+    }
+
+        .acronym-explanation__acronym {}
+
+            .acronym-explanation__acronym-letter {
+                font-family: 'Varela Round', sans-serif;
+                font-size: 50px;
+                display: inline-block;
+                vertical-align: middle;
+                text-align: center;
+                width: 20%;
+            }
+
+            .acronym-explanation__acronym-description {
+                display: inline-block;
+                vertical-align: middle;
+            }
+
+.simple-input {
+    margin-top: 15px;
+    text-align: center;
+}
+
+    .simple-input__heading {}
+
+    .simple-input__subtext {}
+
+    .simple-input__label {
+        margin-top: 15px;
+        display: block;
+    }
+
+    .simple-input__label--gender {
+        margin-top: 5px;
+        display: inline-block;
+    }
+
+    .simple-input__age {
+        display: block;
+        margin: auto;
+        width: 50px;
+        height: 25px;
+        border: 1px solid #000;
+        margin-top: 5px;
+    }
+
+    .simple-input__radio {
+        display: inline-block;
+        margin: 0 20px;
+    }
 
 @media screen and (min-width: 760px) {
     .introduction {
